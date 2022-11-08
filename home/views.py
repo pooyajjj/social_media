@@ -81,6 +81,7 @@ class PostUpdateView(LoginRequiredMixin, View):
             return redirect('home:post_detail', post.id, post.slug)
 
 
+
 class PostCreateView(LoginRequiredMixin ,View):
     form_class = PostCreateUpdateForm
 
